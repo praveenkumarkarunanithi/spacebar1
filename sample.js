@@ -47,16 +47,18 @@ var grid = new ej.grids.Grid({
   allowPaging: true,
   allowSelection: true,
   allowFiltering: true,
+  editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
   keyPressed: function () {
     debugger;
   },
   filterSettings: { type: 'Menu' },
-  toolbar: [{ text: 'Search', align: 'left' }],
+  toolbar: [{ text: 'Search'}],
   columns: [
     {
       field: 'OrderID',
       headerText: 'Order ID',
       width: 120,
+      isPrimaryKey: true,
     },
     { field: 'CustomerID', headerText: 'Customer Name', width: 150 },
     {
