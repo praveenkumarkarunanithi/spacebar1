@@ -3,6 +3,8 @@ var grid = new ej.grids.Grid({
     dataSource: data,
     allowSelection: true,
     allowFiltering: true,
+    allowPaging: true,
+    pageSettings: { pageCount: 5 },
     editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true},
     filterSettings: { type: 'Excel' },
     toolbar: [{ text: 'Search'}, 'Add', 'Edit', 'Delete', 'Update', 'Cancel'],
