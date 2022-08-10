@@ -11,7 +11,7 @@ var grid = new ej.grids.Grid({
     keyPressed: function () {
         debugger;
     },
-    allowKeyBoard: false;
+    allowKeyboard: false;
     columns: [
       {field: 'OrderID',headerText: 'Order ID',width: 120,isPrimaryKey: true},
       { type: 'checkbox' , headerText: 'Customer Name', width: 150 },
