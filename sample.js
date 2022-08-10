@@ -11,9 +11,10 @@ var grid = new ej.grids.Grid({
     keyPressed: function () {
         debugger;
     },
+    allowKeyBoard: false;
     columns: [
       {field: 'OrderID',headerText: 'Order ID',width: 120,isPrimaryKey: true},
-      { field: 'CustomerID', headerText: 'Customer Name', width: 150 },
+      { type: 'checkbox' , headerText: 'Customer Name', width: 150 },
       {field: 'ShipCity',headerText: 'Ship City',width: 130},
       {field: 'ShipName',headerText: 'Ship Name',width: 120},
       {field: 'ShipCountry', headerText: 'Ship Country', width: 150 },
