@@ -1,8 +1,6 @@
 
 var grid = new ej.grids.Grid({
     dataSource: data,
-//     allowPaging: true,
-//     pageSettings: { pageCount: 5 },
     allowSelection: true,
     allowFiltering: true,
     editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true},
